@@ -4,12 +4,20 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Chat from "./Chat";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Login from "./Login.js";
+import {useStateValue} from "./StateProvider";
 
 function App() {
+  const [{user}, dispatch] = useStateValue();
+
   return (
     <div className="App">
       <Router>
-        <Header/>
+        {!user ?
+          (<Login/>)
+        :
+        (<>
+          <Header/>
           <div className="app__body">
             <Sidebar/>
 
@@ -24,6 +32,8 @@ function App() {
             </Switch>
 
           </div>
+          </>
+          )}
       </Router>  
     </div>
   );

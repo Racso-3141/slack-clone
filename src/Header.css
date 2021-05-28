@@ -16,7 +16,6 @@
 
 .header__left > .MulSvgIcon-root {
     margin-left: auto;
-    margin-right: 30px;
 }
 
 .header__search {
@@ -47,4 +46,8 @@
 .header__left > .MulSvgIcon-root {
     margin-left: auto;
     margin-right: 20px;
+}
+
+.header__left > #time {
+    margin-left: 20px;
 }
