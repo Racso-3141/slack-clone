@@ -29,7 +29,7 @@ function Login() {
             <div className="login__container">
                 <img src = "https://static.surveysparrow.com/site/assets/integrations/inner/slack.png"></img>
                 <h1>Sign in to Slack-clone</h1>
-                <p>cleverprogrammer.slack.com</p>
+                <p>https://slack-clone-47a68.web.app/</p>
                 <Button onClick={signIn}>Sign In with Google</Button>
             </div>
         </div>
